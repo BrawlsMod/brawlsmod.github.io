@@ -382,9 +382,9 @@ In conclusion, while the core experience offered by the original game is highly 
 
     </div>
 <div style="max-width: 400px; margin: 20px auto; padding: 15px; background: #1e1e1e; border-radius: 10px; color: white; font-family: sans-serif; font-size: 14px;">
-  <textarea id="inputText" rows="3" placeholder="Enter the text you will write in color..." style="width:100%;padding:8px;border-radius:5px;font-size:14px;margin-bottom:10px;"></textarea>
+  <textarea id="inputText" rows="3" placeholder="Write color code for brawl stars" style="width:100%;padding:8px;border-radius:5px;font-size:14px;margin-bottom:10px;"></textarea>
 
-    <select id="colorSelect" onchange="update()" style="width:100%;padding:8px;margin-bottom:10px;">
+  <select id="colorSelect" onchange="update()" style="width:100%;padding:8px;margin-bottom:10px;">
     <option value="c1">White</option>
     <option value="c2">Red</option>
     <option value="c3">Green</option>
@@ -396,7 +396,9 @@ In conclusion, while the core experience offered by the original game is highly 
     <option value="c9">Purple</option>
   </select>
 
-  <button onclick="generate()" style="width:100%;padding:8px;margin-bottom:10px;background:#333;color:white;border:none;border-radius:5px;">Generate Colored Text</button>
+  <button onclick="generate()" style="width:100%;padding:8px;margin-bottom:10px;background:#333;color:white;border:none;border-radius:5px;">
+   · Generate Colored Text 
+  </button>
 
   <div style="margin-bottom:10px;"><b>· Preview:</b></div>
   <div id="previewText" style="margin-bottom:10px; font-weight: bold;"></div>
@@ -418,7 +420,7 @@ In conclusion, while the core experience offered by the original game is highly 
   function generate() {
     const text = document.getElementById("inputText").value;
     const color = document.getElementById("colorSelect").value;
-    const result = `<${color}>${text}`;
+    const result = `<${color}>${text}</c>`;
     document.getElementById("outputText").innerText = result;
     document.getElementById("previewText").style.color = colorToCSS(color);
     document.getElementById("previewText").innerText = text;
