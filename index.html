@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 
 <head>
@@ -343,7 +343,13 @@
                 <h2 style="font-size: 20px;">Lucky Brawl</h2>
                 <p style="font-size: 14px; color: #666;">Lucky Brawl is a unique alternative to Brawl Stars, offering changes in the conditions of interaction with game resources.</p>
                 <a href="https://mcead.com/index.php?do=file-page&id=6653&news_id=2230&name=Lucky%20Brawl%20v2.2&une=1" class="download-btn" target="_blank">Download</a>
-            </div>
+                  </div>
+            <div class="game">
+                <img src="oyun16.jpeg" alt="">
+                <h2 style="font-size: 20px;">Tale Stars</h2>
+                <p style="font-size: 14px; color: #666;">There are many features in Tale Stars. These features are free and you can use them as much as you want.</p>
+                <a href="https://www.mediafire.com/file/6xvpbdk8h8zkb1d/Tale_Stars_v60.apk/file" class="download-btn" target="_blank">Download</a>
+              </div>
             <p>This game, which combines speed and strategy among multiplayer action games, has quickly gained a large fan base. The game, which draws attention with its colorful graphics, various characters and dynamic game modes, appeals to players of all ages.
 
 There are warriors with different abilities in the game, and each offers its own unique style of play. The competition is constantly kept alive thanks to various modes where you can fight as a team or individually. In addition, new content is added with regular updates to keep the gaming experience fresh.
@@ -365,7 +371,71 @@ Alongside these alternative gaming experiences, competition within communities i
 In conclusion, while the core experience offered by the original game is highly appreciated by many players, alternative game versions have also earned a strong place in the gaming world. However, it is important for players to be cautious before using such versions and to make sure they remain compatible with the original game.<p>
         </div>
        <img src="banner.jpeg" alt=""> <p>Play one of these games right now, they are very fun, be ready for the tale brawl game in the future, it will be uploaded to this site first, so don't forget to wait...<p>
+<div style="text-align:center; font-size:30px; animation: bounce 1s infinite;">Color Texts for Brawl Stars...</div>
+
+<style>
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+</style>
+
     </div>
+<div style="max-width: 400px; margin: 20px auto; padding: 15px; background: #1e1e1e; border-radius: 10px; color: white; font-family: sans-serif; font-size: 14px;">
+  <textarea id="inputText" rows="3" placeholder="Enter the text you will write in color..." style="width:100%;padding:8px;border-radius:5px;font-size:14px;margin-bottom:10px;"></textarea>
+
+    <select id="colorSelect" onchange="update()" style="width:100%;padding:8px;margin-bottom:10px;">
+    <option value="c1">White</option>
+    <option value="c2">Red</option>
+    <option value="c3">Green</option>
+    <option value="c4">Blue</option>
+    <option value="c5">Yellow</option>
+    <option value="c6">Pink</option>
+    <option value="c7">Orange</option>
+    <option value="c8">Gray</option>
+    <option value="c9">Purple</option>
+  </select>
+
+  <button onclick="generate()" style="width:100%;padding:8px;margin-bottom:10px;background:#333;color:white;border:none;border-radius:5px;">Generate Colored Text</button>
+
+  <div style="margin-bottom:10px;"><b>· Preview:</b></div>
+  <div id="previewText" style="margin-bottom:10px; font-weight: bold;"></div>
+
+  <div><b>· Color Code:</b></div>
+  <div id="outputText" style="background:#2a2a2a;padding:8px;border-radius:5px;margin-top:5px;word-break:break-word;"></div>
+  <button onclick="copyText()" style="margin-top:10px;width:100%;padding:8px;background:#444;color:white;border:none;border-radius:5px;">· Copy</button>
+</div>
+
+<script>
+  function colorToCSS(code) {
+    const colors = {
+      c1: "white", c2: "red", c3: "limegreen", c4: "dodgerblue",
+      c5: "gold", c6: "hotpink", c7: "orange", c8: "gray", c9: "purple"
+    };
+    return colors[code] || "white";
+  }
+
+  function generate() {
+    const text = document.getElementById("inputText").value;
+    const color = document.getElementById("colorSelect").value;
+    const result = `<${color}>${text}`;
+    document.getElementById("outputText").innerText = result;
+    document.getElementById("previewText").style.color = colorToCSS(color);
+    document.getElementById("previewText").innerText = text;
+  }
+
+  function update() {
+    generate();
+  }
+
+  function copyText() {
+    const text = document.getElementById("outputText").innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Copied to clipboard!");
+    });
+  }
+</script>
+
     <footer>
         <p>&copy; 2025 BrawlsMod. All Rights Reserved.</p>
         <p>fasterstudiox@gmail.com</p>
