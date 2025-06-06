@@ -251,34 +251,91 @@
 </head>
 <body>
   <button onclick="window.location.href='https://link.brawlstars.com/tr/?action=voucher&code=b647c71d-41a5-42c4-a10f-8d47952d82f3'">Brawl Stars Clown</button>
-<!-- REKLAM MODAL KUTUSU -->
-<div id="reklamModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);z-index:9999;justify-content:center;align-items:center;">
-  <div style="position:relative;width:90%;max-width:600px;background:#fff;padding:20px;border-radius:10px;text-align:center;">
-    <!-- Çıkış Butonu -->
-    <span onclick="document.getElementById('reklamModal').style.display='none'"
-          style="position:absolute;top:8px;right:10px;font-size:20px;font-weight:bold;cursor:pointer;color:#666;">✕</span>
-    
-    <!-- Google AdSense Reklam Kodu -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468" crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4073805821280468"
-         data-ad-slot="4657891691"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+</body>
+<div class="ad-container" id="adContainer" style="display: none;">
+    <div class="ad-box">
+        <button class="close-btn" onclick="closeAd()">×</button>
+        <div>
+            <!-- Google AdSense Reklam Kodu -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468" crossorigin="anonymous"></script>
+            <!-- tamekran -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4073805821280468"
+                 data-ad-slot="4657891691"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 </div>
 
-<script>
-  // 3 saniye sonra reklam kutusunu göster
-  setTimeout(function() {
-    document.getElementById('reklamModal').style.display = 'flex';
-  }, 3000);
-</script>
+<style>
+    .ad-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .ad-box {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 90%; /* Mobil uyumlu hale getirmek için genişlik sınırlaması */
+        width: auto;
+    }
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 50%; /* Tam daire şekli */
+        width: 30px; /* Dairenin genişliği */
+        height: 30px; /* Dairenin yüksekliği */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    /* Mobil uyumluluk için */
+    @media (max-width: 768px) {
+        .ad-box {
+            padding: 5px;
+        }
+        .close-btn {
+            font-size: 16px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+</style>
+
+<script>
+    // Reklam 3 saniye sonra görünsün
+    setTimeout(function() {
+        document.getElementById('adContainer').style.display = 'flex';
+    }, 3000);
+
+    // Reklamı kapatma fonksiyonu
+    function closeAd() {
+        document.getElementById('adContainer').style.display = 'none';
+    }
+</script>
 </html>
         <div class="games" id="gameList">
             <div class="game">
