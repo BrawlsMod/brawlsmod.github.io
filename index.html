@@ -1,223 +1,263 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brawlsmod - Download the Latest Brawl Stars APK (2025)</title>
-    <link rel=icon href=lgo.png>
-   <meta name="description" content="Download the latest and safest Brawlsmod APK file. Play with updated mod features and exclusive content for free!">
-   <meta name="keywords" content="brawlsmod, brawl stars mod, brawls mod apk download, brawlsmod 2025">
-   <meta name="robots" content="index, follow">
-   <link rel="canonical" href="https://brawlsmod.github.io/" />
-    <script type="application/ld+json">
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brawlsmod - Download the Latest Brawl Stars APK (2025)</title>
+  <link rel="icon" href="lgo.png" />
+  <meta name="description" content="Download the latest and safest Brawlsmod APK file. Play with updated mod features and exclusive content for free!">
+  <meta name="keywords" content="brawlsmod, brawl stars mod, brawls mod apk download, brawlsmod 2025">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://brawlsmod.github.io/" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
      crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #eef2f3);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
 
-        .sidebar {
-            width: 200px;
-            background: #444;
-            color: white;
-            padding: 15px;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            font-size: 16px;
-            transition: width 0.3s ease;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-        }
+    .dark-mode {
+      background: #121212;
+      color: #f0f0f0;
+    }
 
-        .sidebar:hover {
-            width: 220px;
-        }
+    .dark-mode .sidebar {
+      background: rgba(255, 255, 255, 0.08);
+      color: #f0f0f0;
+    }
 
-        .sidebar h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            text-align: center;
-            transition: color 0.3s ease;
-        }
+    .dark-mode .sidebar ul li a {
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+    }
 
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
+    .dark-mode .sidebar ul li a:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
 
-        .sidebar ul li {
-            margin: 10px 0;
-            transition: transform 0.3s ease;
-        }
+    .dark-mode .game {
+      background: #1e1e1e;
+      color: white;
+    }
 
-        .sidebar ul li:hover {
-            transform: scale(1.1);
-        }
+    .dark-mode .download-btn {
+      background-color: #2ecc71;
+    }
 
-        .sidebar ul li a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            background: #555;
-            border-radius: 5px;
-            text-align: center;
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
+    .dark-mode .download-btn:hover {
+      background-color: #27ae60;
+    }
 
-        .sidebar ul li a:hover {
-            background: #666;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
+    .dark-mode input,
+    .dark-mode select,
+    .dark-mode textarea {
+      background: #222;
+      color: #eee;
+      border: 1px solid #444;
+    }
 
-        .content {
-            margin-left: 220px;
-            padding: 20px;
-            flex-grow: 1;
-            transition: margin-left 0.3s ease;
-        }
+    .dark-mode footer {
+      background: #1a1a1a;
+      color: #ccc;
+    }
 
-        .search-bar {
-            margin-bottom: 20px;
-            text-align: center;
-        }
+    .sidebar {
+      width: 260px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      backdrop-filter: blur(10px);
+      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
 
-        .search-bar input {
-            padding: 10px;
-            width: 80%;
-            max-width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: border 0.3s ease;
-        }
+    .sidebar h2 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
 
-        .search-bar input:focus {
-            border: 1px solid #28a745;
-            outline: none;
-        }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .content h1 {
-            font-size: 28px;
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+    .sidebar ul li {
+      margin: 10px 0;
+    }
 
-        .games {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
+    .sidebar ul li a {
+      display: block;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
 
-        .game {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            max-width: 300px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .sidebar ul li a:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
 
-        .game:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
+    .content {
+      margin-left: 280px;
+      padding: 30px;
+      flex-grow: 1;
+    }
 
-        .game img {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px;
-            border: 2px dashed #000;
-            transition: transform 0.3s ease;
-        }
+    .search-bar {
+      text-align: center;
+      margin-bottom: 25px;
+    }
 
-        .game img:hover {
-            transform: scale(1.05);
-        }
+    .search-bar input {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-        .download-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #28a745;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
 
-        .download-btn:hover {
-            background: #218838;
-            transform: scale(1.1);
-        }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
 
-        footer {
-            background: #444;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: auto;
-        }
+    .game {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
 
-        footer p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
+    .game:hover {
+      transform: translateY(-5px);
+    }
 
-        @media (max-width: 767px) {
-            body {
-                flex-direction: column;
-            }
+    .game img {
+      max-width: 160px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
 
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                text-align: center;
-                font-size: 14px;
-            }
+    .game img:hover {
+      transform: scale(1.05);
+    }
 
-            .content {
-                margin-left: 0;
-            }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #27ae60;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
 
-            .games {
-                flex-direction: column;
-            }
-        }
-    </style>
+    .download-btn:hover {
+      background-color: #1e8449;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    /* Gece modu butonu */
+    .toggle-dark {
+      position: fixed;
+      top: 2px; /* Buton yukarıda */
+      right: 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 2000;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-dark:hover {
+      background: #444;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .content {
+        margin-left: 0;
+      }
+
+      .games {
+        flex-direction: column;
+      }
+
+      .toggle-dark {
+        top: 2px;
+        right: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="https://mcead.com/minecraft-apk/" target="_blank">Minecraft Version</a></li>
-            <li><a href="https://brawlsmod.github.io/ComputerGames/" target="_blank">Computer Games</a></li>
-            <li><a href="https://brawlmods.natesworks.com/" target="_blank">Natesworks</a></li>
-          <h2>Social</h2>
-        <p><li><a href="https://discord.com/invite/clb" target="_blank">Discord</a></li><p>
-        <p><li><a href="https://www.youtube.com/@ShadeGF" target="_blank">YouTube</a></li><p>
-        </ul>
-    </div>
-    <div class="content">
-        <div class="search-bar">
-            <input type="text" id="search" placeholder="Search Brawl Stars mods..." onkeyup="searchGames()">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
+  <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')">Dark Mode</button>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="https://mcead.com/apps/games/private-brawl-stars/" target="_blank">Mcead Mods</a></li>
+      <li><a href="https://brawlsmod.github.io/ComputerGames/" target="_blank">Computer Games</a></li>
+      <li><a href="https://brawlmods.natesworks.com/" target="_blank">Natesworks</a></li>
+      <h2>Social</h2>
+      <li><a href="https://discord.com/uKqYXzBB" target="_blank">Discord</a></li>
+      <li><a href="https://www.youtube.com/@LGXStudioX" target="_blank">YouTube</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search Brawl Stars mods..." onkeyup="searchGames()" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
      crossorigin="anonymous"></script>
 <!-- reklam -->
 <ins class="adsbygoogle"
@@ -227,37 +267,18 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<p>The latest brawl stars mods download site, these mods are made to give the best advantage to the players.<p>
-        </div>
-        <h1>Brawl Stars Mods Download...</h1>
-  <style>
-    button {
-      background-color: #4CAF50; /* Yeşil */
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+      <p>The latest brawl stars mods download site, these mods are made to give the best advantage to the players.</p>
+    </div>
 
-    button:hover {
-      background-color: #45a049; /* Üzerine gelince renk */
-    }
-  </style>
-</head>
-<body>
-  <button onclick="window.location.href='https://link.brawlstars.com/tr/?action=voucher&code=b647c71d-41a5-42c4-a10f-8d47952d82f3'">Brawl Stars Clown</button>
-</body>
-</html>
-        <div class="games" id="gameList">
-            <div class="game">
-                <img src="oyun1.jpeg" alt="">
-                <h2 style="font-size: 20px;">Infinity Brawl</h2>
-                <p style="font-size: 14px; color: #666;">All characters unlocked and third star powers added for some brawlers and new skins.</p>
-                <a href="https://www.mediafire.com/file/51iyqqigit2rd1o/InfinityBrawl.apk/file" class="download-btn" target="_blank">Download</a>
-            </div>
+    <h1>Brawl Stars Mods Download...</h1>
+
+     <div class="games" id="gameList">
+           <div class="game">
+                 <img src="oyun1.jpeg" alt="">
+                 <h2>Infinity Brawl</h2>
+                 <p>All characters unlocked and third star powers added for some brawlers and new skins.</p>
+                 <a href="https://www.mediafire.com/file/51iyqqigit2rd1o/InfinityBrawl.apk/file" class="download-btn" target="_blank">Download</a>
+           </div>
             <div class="game">
                 <img src="oyun2.jpeg" alt="">
                 <h2 style="font-size: 20px;">Retro Brawl</h2>
@@ -273,7 +294,7 @@
             <div class="game">
                 <img src="oyun4.jpeg" alt="">
                 <h2 style="font-size: 20px;">Offline Brawl</h2>
-                <p style="font-size: 14px; color: #666;">You can enter this game without opening the internet.</p>
+                <p style="font-size: 14px; color: #666;">This mode is offline, one of the best brawl stars modes that you can earn trophies without internet.</p>
                 <a href="https://www.mediafire.com/file/6206y9pj4d7tt0f/OfflineBrawl.apk/file" class="download-btn" target="_blank">Download</a>
                </div>
             <div class="game">
@@ -282,7 +303,7 @@
                 <p style="font-size: 14px; color: #666;">sigma brawl is a mod created for old brawl stars this mod has a lot of features...</p>
                 <a href="https://www.mediafire.com/file/qes8kghmxaeadkl/sigma-brawl-v20.93.apk" class="download-btn" target="_blank">Download</a>
                </div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
      crossorigin="anonymous"></script>
 <!-- reklam1 -->
 <ins class="adsbygoogle"
@@ -319,22 +340,6 @@
                 <a href="https://mcead.com/index.php?do=file-page&id=17076&news_id=2245&name=Ghoul%20Stars%20v59.197&une=1" class="download-btn" target="_blank">Download</a>
                  </div>
             <div class="game">
-                <img src="oyun10.jpeg" alt="">
-                <h2 style="font-size: 20px;">Steel Brawl</h2>
-                <p style="font-size: 14px; color: #666;">This mode may be one of the best brawl stars modes. It has its own servers. Every time you enter the game, the ping is 0.</p>
-                <a href="https://mcead.com/index.php?do=file-page&id=21160&news_id=2250&name=Steel%20Brawl%20v36.223%20(NEW%20VERSION)&use=1" class="download-btn" target="_blank">Download</a>
-                 </div>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
-     crossorigin="anonymous"></script>
-<!-- reklam alt -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4073805821280468"
-     data-ad-slot="2307839809"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-            <div class="game">
                 <img src="oyun11.jpeg" alt="">
                 <h2 style="font-size: 20px;">Gale Brawl</h2>
                 <p style="font-size: 14px; color: #666;">Gale Brawl quickly gained popularity among Brawl Stars fans with its innovations and impressive optimization. The developers have implemented a quality project, putting great effort into developing the game resources.</p>
@@ -358,6 +363,16 @@
                 <p style="font-size: 14px; color: #666;">Lucky Brawl is a unique alternative to Brawl Stars, offering changes in the conditions of interaction with game resources.</p>
                 <a href="https://mcead.com/index.php?do=file-page&id=6653&news_id=2230&name=Lucky%20Brawl%20v2.2&une=1" class="download-btn" target="_blank">Download</a>
                   </div>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
+     crossorigin="anonymous"></script>
+<!-- reklam alt -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4073805821280468"
+     data-ad-slot="2307839809"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
             <div class="game">
                 <img src="oyun16.jpeg" alt="">
                 <h2 style="font-size: 20px;">Tale Stars</h2>
@@ -375,28 +390,41 @@
                 <h2 style="font-size: 20px;">Cool Brawl</h2>
                 <p style="font-size: 14px; color: #666;">A great brawl stars mod with lots of characters in it. There are a lot of things in the mod. Enjoy it now.</p>
                 <a href="https://dl.natesworks.com/brawlstars/mods/coolbrawl/Cool+Brawl_v2.1.0.apk" class="download-btn" target="_blank">Download</a>
-              </div>
-            <p>This game, which combines speed and strategy among multiplayer action games, has quickly gained a large fan base. The game, which draws attention with its colorful graphics, various characters and dynamic game modes, appeals to players of all ages.
+               </div>
+            <div class="game">
+                <img src="oyun20.jpeg" alt="">
+                <h2 style="font-size: 20px;">Multi Brawl</h2>
+                <p style="font-size: 14px; color: #666;">It is a brawl stars mod with special characters, robot characters and the like.</p>
+                <a href="https://www.mediafire.com/file/iswzt3wwci249f5/Multi_Brawl_v47.022.apk/file" class="download-btn" target="_blank">Download</a>
+               </div>
+            <div class="game">
+                <img src="oyun21.jpeg" alt="">
+                <h2 style="font-size: 20px;">Mandy Brawl</h2>
+                <p style="font-size: 14px; color: #666;">This brawl stars mod increases the fps of your game and you can play the game with 0 ping and the mod is offline.</p>
+                <a href="https://www.mediafire.com/file/zoqj9g9j2rwpnvo/Mandy's+Candy+v2.4.apk/file?dkey=xv7z8km6k0x&r=477#" class="download-btn" target="_blank">Download</a>
+               </div>
+            </div>
+<p>This game, which combines speed and strategy among multiplayer action games, has quickly gained a large fan base. The game, which draws attention with its colorful graphics, various characters and dynamic game modes, appeals to players of all ages.
 
 There are warriors with different abilities in the game, and each offers its own unique style of play. The competition is constantly kept alive thanks to various modes where you can fight as a team or individually. In addition, new content is added with regular updates to keep the gaming experience fresh.
 
 This game, which stands out with its fast-paced conflicts, tactical depth and fun mechanics, has earned itself a solid place in the mobile gaming world. You can have a pleasant time playing both alone and with your friends.<p>
-            <p>This mobile game, which draws attention with its fast and competitive gameplay, has reached a wide player base in a short time. In this production, where different characters are equipped with special abilities, strategy and reflexes are of great importance.
+<p>This mobile game, which draws attention with its fast and competitive gameplay, has reached a wide player base in a short time. In this production, where different characters are equipped with special abilities, strategy and reflexes are of great importance.
 
 Players try to defeat their opponents by fighting in various modes. Offering different options from team-based battles to individual survival struggles, the game provides an experience that appeals to every taste.
 
-This action-packed world, which is constantly evolving with regular updates and events, always offers players a new challenge. With its fun graphics, smooth controls and competitive structure, it has become an indispensable option for mobile game lovers.<p> 
-           <p>The common condition for all of them is the free access to the desired items in the game (unlike the original). But for this you will have to gradually accumulate game resources and gradually gain access to additional items.<p>
-          <p>Most similar games are almost the same as the original project, except for the lack of up-to-date content. Those that follow the trend when adding new characters do so with a slight delay. The fastest versions add new heroes within a week of the original's release.<p>
-         <p>Recently, alternative versions of popular mobile games, developed by some players, have gained a lot of attention. These alternative versions offer players a different gaming experience by making some additions and changes to the original game. These games typically maintain the core mechanics of the original, while adding new characters, maps, or features.
+This action-packed world, which is constantly evolving with regular updates and events, always offers players a new challenge. With its fun graphics, smooth controls and competitive structure, it has become an indispensable option for mobile game lovers.<p>
+<p>The common condition for all of them is the free access to the desired items in the game (unlike the original). But for this you will have to gradually accumulate game resources and gradually gain access to additional items.<p>
+<p>Most similar games are almost the same as the original project, except for the lack of up-to-date content. Those that follow the trend when adding new characters do so with a slight delay. The fastest versions add new heroes within a week of the original's release.<p>
+<p>Recently, alternative versions of popular mobile games, developed by some players, have gained a lot of attention. These alternative versions offer players a different gaming experience by making some additions and changes to the original game. These games typically maintain the core mechanics of the original, while adding new characters, maps, or features.
 
 Many players are seeking more fun and challenges through the innovations offered by these alternative versions. These changes often include faster progression or battles with more difficult opponents. For example, new characters and enhanced abilities can take the gaming experience to a whole new level. Additionally, changes in visual effects can make the game world more immersive.
 
 Alongside these alternative gaming experiences, competition within communities is also increasing. Different player groups spend time developing these versions, and sometimes very creative content emerges. However, the developers of the original game have issued warnings that such content may sometimes disrupt game balance or negatively impact the overall experience.
 
 In conclusion, while the core experience offered by the original game is highly appreciated by many players, alternative game versions have also earned a strong place in the gaming world. However, it is important for players to be cautious before using such versions and to make sure they remain compatible with the original game.<p>
-        </div>
-       <img src="banner.jpeg" alt=""> <p>We are working on adding more brawl stars modes, you can support us.<p>
+    <img src="banner.jpeg" alt="" style="max-width:100%;border-radius:10px;margin:20px 0;">
+    <p>We are working on adding more brawl stars modes, you can support us.</p>
 <div style="text-align:center; font-size:40px;">Color Texts for Brawl Stars...</div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073805821280468"
      crossorigin="anonymous"></script>
@@ -410,97 +438,70 @@ In conclusion, while the core experience offered by the original game is highly 
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
-<style>
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-}
-</style>
-
+    <div style="max-width:400px;margin:20px auto;background:#1e1e1e;padding:15px;border-radius:10px;color:white;">
+      <textarea id="inputText" rows="3" placeholder="Write color code for brawl stars..." style="width:100%;padding:10px;border-radius:5px;"></textarea>
+      <select id="colorSelect" onchange="update()" style="width:100%;padding:10px;margin-top:10px;">
+        <option value="c1">White</option>
+        <option value="c2">Red</option>
+        <option value="c3">Green</option>
+        <option value="c4">Blue</option>
+        <option value="c5">Yellow</option>
+        <option value="c6">Pink</option>
+        <option value="c7">Orange</option>
+        <option value="c8">Gray</option>
+        <option value="c9">Purple</option>
+      </select>
+      <button onclick="generate()" style="margin-top:10px;width:100%;">Generate Colored Text</button>
+      <div><b>· Preview:</b></div>
+      <div id="previewText" style="margin:10px 0;font-weight:bold;"></div>
+      <div><b>· Color Code:</b></div>
+      <div id="outputText" style="background:#333;padding:10px;border-radius:5px;word-break:break-word;"></div>
+      <button onclick="copyText()" style="margin-top:10px;width:100%;">Copy</button>
     </div>
-<div style="max-width: 400px; margin: 20px auto; padding: 15px; background: #1e1e1e; border-radius: 10px; color: white; font-family: sans-serif; font-size: 14px;">
-  <textarea id="inputText" rows="3" placeholder="Write color code for brawl stars" style="width:100%;padding:8px;border-radius:5px;font-size:14px;margin-bottom:10px;"></textarea>
-
-  <select id="colorSelect" onchange="update()" style="width:100%;padding:8px;margin-bottom:10px;">
-    <option value="c1">White</option>
-    <option value="c2">Red</option>
-    <option value="c3">Green</option>
-    <option value="c4">Blue</option>
-    <option value="c5">Yellow</option>
-    <option value="c6">Pink</option>
-    <option value="c7">Orange</option>
-    <option value="c8">Gray</option>
-    <option value="c9">Purple</option>
-  </select>
-
-  <button onclick="generate()" style="width:100%;padding:8px;margin-bottom:10px;background:#333;color:white;border:none;border-radius:5px;">
-   · Generate Colored Text 
-  </button>
-
-  <div style="margin-bottom:10px;"><b>· Preview:</b></div>
-  <div id="previewText" style="margin-bottom:10px; font-weight: bold;"></div>
-
-  <div><b>· Color Code:</b></div>
-  <div id="outputText" style="background:#2a2a2a;padding:8px;border-radius:5px;margin-top:5px;word-break:break-word;"></div>
-  <button onclick="copyText()" style="margin-top:10px;width:100%;padding:8px;background:#444;color:white;border:none;border-radius:5px;">· Copy</button>
-</div>
-
-<script>
-  function colorToCSS(code) {
-    const colors = {
-      c1: "white", c2: "red", c3: "limegreen", c4: "dodgerblue",
-      c5: "gold", c6: "hotpink", c7: "orange", c8: "gray", c9: "purple"
-    };
-    return colors[code] || "white";
-  }
-
-  function generate() {
-    const text = document.getElementById("inputText").value;
-    const color = document.getElementById("colorSelect").value;
-    const result = `<${color}>${text}</c>`;
-    document.getElementById("outputText").innerText = result;
-    document.getElementById("previewText").style.color = colorToCSS(color);
-    document.getElementById("previewText").innerText = text;
-  }
-
-  function update() {
-    generate();
-  }
-
-  function copyText() {
-    const text = document.getElementById("outputText").innerText;
-    navigator.clipboard.writeText(text).then(() => {
-      alert("Copied to clipboard!");
-    });
-  }
-</script>
 
     <footer>
-        <p>&copy; 2025 BrawlsMod. All Rights Reserved.</p>
-        <p>fasterstudiox@gmail.com</p>
+      <p>&copy; 2025 BrawlsMod. All Rights Reserved.</p>
+      <p>fasterstudiox@gmail.com</p>
     </footer>
+  </div>
 
-    <script>
-        function searchGames() {
-            const input = document.getElementById('search');
-            const filter = input.value.toLowerCase();
-            const gameList = document.getElementById('gameList');
-            const games = gameList.getElementsByClassName('game');
+  <script>
+    function searchGames() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const games = document.querySelectorAll('.game');
+      games.forEach(game => {
+        const title = game.querySelector('h2').innerText.toLowerCase();
+        game.style.display = title.includes(input) ? '' : 'none';
+      });
+    }
 
-            for (let i = 0; i < games.length; i++) {
-                const gameTitle = games[i].getElementsByTagName('h2')[0];
-                if (gameTitle) {
-                    const txtValue = gameTitle.textContent || gameTitle.innerText;
-                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                        games[i].style.display = "";
-                    } else {
-                        games[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
+    function colorToCSS(code) {
+      const colors = {
+        c1: "white", c2: "red", c3: "limegreen", c4: "dodgerblue",
+        c5: "gold", c6: "hotpink", c7: "orange", c8: "gray", c9: "purple"
+      };
+      return colors[code] || "white";
+    }
+
+    function generate() {
+      const text = document.getElementById("inputText").value;
+      const color = document.getElementById("colorSelect").value;
+      const result = `<${color}>${text}</c>`;
+      document.getElementById("outputText").innerText = result;
+      document.getElementById("previewText").style.color = colorToCSS(color);
+      document.getElementById("previewText").innerText = text;
+    }
+
+    function update() {
+      generate();
+    }
+
+    function copyText() {
+      const text = document.getElementById("outputText").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+  </script>
 </body>
-
 </html>
